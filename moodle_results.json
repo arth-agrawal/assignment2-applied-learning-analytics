@@ -1,0 +1,183 @@
+{
+  "event_volume": {
+    "n": 187,
+    "positive": 93,
+    "prevalence": 0.49732620320855614,
+    "accuracy": 0.46524064171123,
+    "precision": 0.425531914893617,
+    "recall": 0.21505376344086022,
+    "f1": 0.28571428571428575,
+    "roc_auc": 0.5068634179821551,
+    "average_precision": 0.47939955703203313,
+    "confusion": [
+      [
+        67,
+        27
+      ],
+      [
+        73,
+        20
+      ]
+    ]
+  },
+  "volume_and_coverage": {
+    "n": 187,
+    "positive": 93,
+    "prevalence": 0.49732620320855614,
+    "accuracy": 0.5828877005347594,
+    "precision": 0.7027027027027027,
+    "recall": 0.27956989247311825,
+    "f1": 0.4,
+    "roc_auc": 0.6416723861816518,
+    "average_precision": 0.6585409380189418,
+    "confusion": [
+      [
+        83,
+        11
+      ],
+      [
+        67,
+        26
+      ]
+    ]
+  },
+  "M1": {
+    "features": "Four calendar weeks of events; next seven days is the outcome window.",
+    "split": "80% of learners train, 20% held out by learner identifier; no learner appears in both sets.",
+    "train_learners": 138,
+    "test_learners": 34,
+    "train_rows": 745,
+    "test_rows": 187,
+    "window_count": 9,
+    "auc_change": 0.13480896819949673,
+    "auc_change_ci": [
+      0.08137823961103526,
+      0.1848477861395699
+    ],
+    "activity_coverage_effect": 1.7628994736807633
+  },
+  "M2": {
+    "features": [
+      "log_events",
+      "day_coverage",
+      "week_coverage",
+      "quiz_share",
+      "resource_share",
+      "submission_share",
+      "sessions"
+    ],
+    "selected_k": 5,
+    "silhouette_by_k": {
+      "2": 0.27858264747723116,
+      "3": 0.2744812688438997,
+      "4": 0.2770234249236807,
+      "5": 0.3052317317982046
+    },
+    "repeat_fit_ari_mean": 0.9054107044843536,
+    "repeat_fit_ari_min": 0.7928231206527752,
+    "profile_summary": [
+      {
+        "profile_label": "Profile 1",
+        "learners": 15,
+        "median_events": 13.0,
+        "median_active_days": 4.0,
+        "median_active_weeks": 3.0,
+        "median_day_coverage": 0.014184397163120567,
+        "quiz_share": 0.0,
+        "resource_share": 0.05714285714285714,
+        "submission_share": 0.0,
+        "sessions": 4.0
+      },
+      {
+        "profile_label": "Profile 2",
+        "learners": 23,
+        "median_events": 452.0,
+        "median_active_days": 25.0,
+        "median_active_weeks": 15.0,
+        "median_day_coverage": 0.08865248226950355,
+        "quiz_share": 0.16725978647686832,
+        "resource_share": 0.19690265486725664,
+        "submission_share": 0.17555555555555555,
+        "sessions": 32.0
+      },
+      {
+        "profile_label": "Profile 3",
+        "learners": 43,
+        "median_events": 605.0,
+        "median_active_days": 15.0,
+        "median_active_weeks": 9.0,
+        "median_day_coverage": 0.05319148936170213,
+        "quiz_share": 0.6558345642540621,
+        "resource_share": 0.13581730769230768,
+        "submission_share": 0.0,
+        "sessions": 20.0
+      },
+      {
+        "profile_label": "Profile 4",
+        "learners": 53,
+        "median_events": 813.0,
+        "median_active_days": 19.0,
+        "median_active_weeks": 12.0,
+        "median_day_coverage": 0.0673758865248227,
+        "quiz_share": 0.19656992084432717,
+        "resource_share": 0.4445701357466063,
+        "submission_share": 0.0036429872495446266,
+        "sessions": 26.0
+      },
+      {
+        "profile_label": "Profile 5",
+        "learners": 38,
+        "median_events": 1382.0,
+        "median_active_days": 48.0,
+        "median_active_weeks": 20.0,
+        "median_day_coverage": 0.1702127659574468,
+        "quiz_share": 0.43708879656108923,
+        "resource_share": 0.19513229724461334,
+        "submission_share": 0.056715424759115264,
+        "sessions": 76.0
+      }
+    ],
+    "note": "Clusters use only recorded behaviour; labels are descriptive and contain no learner IDs."
+  },
+  "source": {
+    "rows_received": 146048,
+    "exact_duplicate_rows": 0,
+    "unique_valid_learners": 172,
+    "malformed_id_rows_recovered_from_matching_description": 3334,
+    "unresolved_id_rows": 0,
+    "description_id_mismatches": 0,
+    "timestamp_rows_invalid": 0,
+    "report_view_rows_excluded": 307,
+    "analysis_rows": 145741,
+    "course_identifier": "Single course interaction export; Course viewed descriptions identify IT-2507, course id 1137",
+    "course_start_week_monday": "2025-10-20",
+    "last_event_date": "2026-07-28",
+    "component_counts": {
+      "Quiz": 58485,
+      "System": 35186,
+      "SCORM package": 14006,
+      "Book": 12100,
+      "Page": 10560,
+      "File": 7010,
+      "Assignment": 5864,
+      "Forum": 731,
+      "Glossary": 707,
+      "File submissions": 546,
+      "Online text submissions": 546
+    },
+    "top_event_types": {
+      "Quiz attempt auto-saved": 37492,
+      "Course viewed": 35186,
+      "Course module viewed": 30851,
+      "Chapter viewed": 10471,
+      "Quiz attempt viewed": 8243,
+      "Quiz attempt updated": 7985,
+      "Sco launched": 4635,
+      "The status of the submission has been viewed.": 1856,
+      "Submitted SCORM raw score": 1776,
+      "Submitted SCORM status": 1558
+    },
+    "sha256": "5df9a5590df7200bdd569ec13af4ee3d4ddc5f950a190fd1a589346dc99593d0",
+    "privacy": "Raw user identifiers and row-level learner features are omitted from exports."
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "source": {
+    "rows_studentInfo": 32593,
+    "unique_students": 28785,
+    "rows_studentVle": 10655280,
+    "selected_vle_rows": 891062,
+    "invalid_vle_rows": 0,
+    "cohort_counts": {
+      "2013J": 2237,
+      "2014J": 2292
+    },
+    "repeated_test_ids_excluded": 47,
+    "sha256": {
+      "studentAssessment.csv": "fd5320786328d05af841ee7dd4b5871b9dada3b9fe9d6a3642b2f42635510a6e",
+      "studentInfo.csv": "7e6f3e474a5eee00639d2a414a6c7e928745823c2d2c2563ca1780145f99b0d6",
+      "courses.csv": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75",
+      "vle.csv": "d1b28303dea802ad87b4484e1196e878e06824850b9a4fe8aa34693439fe87e9",
+      "studentRegistration.csv": "0d32676285372aaf2e7a80304e5b274b4fba24313e2ca4c04317225e1ec90170",
+      "assessments.csv": "8cc738fb88ad760571d6f2a23059bfee0ffcae3bcd830514c9cbd5c6d5a046f1"
+    }
+  },
+  "seed": 42,
+  "volume": {
+    "n": 1663,
+    "positive": 1093,
+    "prevalence": 0.6572459410703548,
+    "accuracy": 0.6963319302465424,
+    "precision": 0.7139737991266376,
+    "recall": 0.8975297346752058,
+    "f1": 0.7952979327117957,
+    "roc_auc": 0.686345323510056,
+    "average_precision": 0.791356574353995,
+    "confusion": [
+      [
+        177,
+        393
+      ],
+      [
+        112,
+        981
+      ]
+    ],
+    "auc_ci": [
+      0.6584282784779583,
+      0.7117478239184631
+    ]
+  },
+  "regularity": {
+    "n": 1663,
+    "positive": 1093,
+    "prevalence": 0.6572459410703548,
+    "accuracy": 0.6927239927841251,
+    "precision": 0.7165178571428571,
+    "recall": 0.8810612991765783,
+    "f1": 0.7903159622486664,
+    "roc_auc": 0.6912754209402738,
+    "average_precision": 0.7940605673094245,
+    "confusion": [
+      [
+        189,
+        381
+      ],
+      [
+        130,
+        963
+      ]
+    ],
+    "auc_ci": [
+      0.6638128921051472,
+      0.7159037542667765
+    ]
+  },
+  "O1": {
+    "train_n": 1767,
+    "test_n": 1663,
+    "train_success": 1062,
+    "effect": {
+      "odds_ratio": 1.1071369891713978,
+      "ci": [
+        1.0180175187015579,
+        1.2164617707185619
+      ],
+      "increment": 0.1
+    },
+    "auc_difference": 0.0049300974302178835,
+    "difference_ci": [
+      0.0014246612868988263,
+      0.009143177789822909
+    ],
+    "coverage_groups": [
+      {
+        "active_days": "0 to 14",
+        "n": 1025,
+        "success_rate": 0.5756097560975609
+      },
+      {
+        "active_days": "15 to 28",
+        "n": 527,
+        "success_rate": 0.7741935483870968
+      },
+      {
+        "active_days": "29 to 42",
+        "n": 91,
+        "success_rate": 0.8571428571428571
+      },
+      {
+        "active_days": "43 to 56",
+        "n": 20,
+        "success_rate": 0.85
+      }
+    ]
+  },
+  "submission_volume": {
+    "n": 1564,
+    "positive": 436,
+    "prevalence": 0.27877237851662406,
+    "accuracy": 0.7250639386189258,
+    "precision": 0.5154639175257731,
+    "recall": 0.22935779816513763,
+    "f1": 0.31746031746031744,
+    "roc_auc": 0.7340883027522936,
+    "average_precision": 0.4710451858709082,
+    "confusion": [
+      [
+        1034,
+        94
+      ],
+      [
+        336,
+        100
+      ]
+    ],
+    "auc_ci": [
+      0.7057390527730691,
+      0.7599410705036732
+    ]
+  },
+  "submission_decline": {
+    "n": 1564,
+    "positive": 436,
+    "prevalence": 0.27877237851662406,
+    "accuracy": 0.7653452685421995,
+    "precision": 0.5738758029978587,
+    "recall": 0.6146788990825688,
+    "f1": 0.593576965669989,
+    "roc_auc": 0.7800422115947687,
+    "average_precision": 0.5593772220805209,
+    "confusion": [
+      [
+        929,
+        199
+      ],
+      [
+        168,
+        268
+      ]
+    ],
+    "auc_ci": [
+      0.7539651388681409,
+      0.8055853512368663
+    ]
+  },
+  "O2": {
+    "deadlines": {
+      "2013J": {
+        "id_assessment": 14998,
+        "due_day": 96,
+        "checkpoint_day": 89
+      },
+      "2014J": {
+        "id_assessment": 15022,
+        "due_day": 110,
+        "checkpoint_day": 103
+      }
+    },
+    "banked_excluded": {
+      "2013J": 27,
+      "2014J": 0
+    },
+    "early_submissions_excluded": {
+      "2013J": 84,
+      "2014J": 104
+    },
+    "train_n": 1640,
+    "test_n": 1564,
+    "effect": {
+      "odds_ratio": 1.3737041766822486,
+      "ci": [
+        1.2988913409454397,
+        1.4633392658692235
+      ],
+      "increment": 0.6931471805599453
+    },
+    "auc_difference": 0.04595390884247508,
+    "difference_ci": [
+      0.027687460262843543,
+      0.06552224303065396
+    ],
+    "groups": [
+      {
+        "group": "Declining activity",
+        "n": 590,
+        "late_missing_rate": 0.15593220338983052,
+        "late_n": 62,
+        "missing_n": 30
+      },
+      {
+        "group": "No prior clicks",
+        "n": 632,
+        "late_missing_rate": 0.47151898734177217,
+        "late_n": 107,
+        "missing_n": 191
+      },
+      {
+        "group": "Stable or rising activity",
+        "n": 342,
+        "late_missing_rate": 0.13450292397660818,
+        "late_n": 38,
+        "missing_n": 8
+      }
+    ],
+    "test_missing": 229,
+    "test_late": 207
+  }
+}
